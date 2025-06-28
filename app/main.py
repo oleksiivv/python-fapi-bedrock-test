@@ -5,8 +5,10 @@ from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 
 from app.config.settings import settings
-from app.routes.routes import router as image_router
+from app.routes import create_router
 
+from app.database.database import engine
+from app.database import models
 
 def create_app() -> FastAPI:
     """
@@ -33,7 +35,7 @@ def create_app() -> FastAPI:
     app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
     # Include routers
-    app.include_router(image_router, prefix="")
+    app.include_router(create_router(), prefix="")
 
     # Global exception handler
     @app.exception_handler(Exception)
@@ -54,6 +56,21 @@ def create_app() -> FastAPI:
         print(f"🤖 Using model: {settings.BEDROCK_MODEL_ID}")
         print(f"🌍 AWS Region: {settings.AWS_REGION}")
         print(f"📁 Max file size: {settings.max_file_size_mb}MB")
+
+        # Initialize database
+        print("📊 Initializing database...")
+        try:
+            # Create database tables
+            models.Base.metadata.create_all(bind=engine)
+            print("✅ Database connection: OK")
+
+            # Seed database with initial data
+            print("🌱 Seeding database...")
+            from app.database.seed_products import seed_database_on_startup
+            await seed_database_on_startup()
+
+        except Exception as e:
+            print(f"❌ Database connection: Failed - {str(e)}")
 
         # Test Bedrock connection
         from app.services.bedrock import bedrock_service

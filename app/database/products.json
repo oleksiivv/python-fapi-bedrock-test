@@ -1,0 +1,79 @@
+{
+  "products": [
+    {
+      "name": "Wireless Bluetooth Headphones",
+      "description": "Premium over-ear wireless headphones with active noise cancellation, 30-hour battery life, and crystal-clear audio quality. Perfect for music lovers and professionals.",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+    },
+    {
+      "name": "Smart Fitness Tracker",
+      "description": "Advanced fitness tracker with heart rate monitoring, GPS tracking, sleep analysis, and waterproof design. Track your daily activities and achieve your fitness goals.",
+      "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=500"
+    },
+    {
+      "name": "Organic Coffee Beans - Dark Roast",
+      "description": "Premium organic coffee beans sourced directly from sustainable farms. Rich, bold flavor with notes of chocolate and caramel. Perfect for espresso and drip coffee.",
+      "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=500"
+    },
+    {
+      "name": "Laptop Stand - Adjustable Aluminum",
+      "description": "Ergonomic aluminum laptop stand with multiple height and angle adjustments. Improves posture and reduces neck strain during long work sessions.",
+      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+    },
+    {
+      "name": "Indoor Plant - Monstera Deliciosa",
+      "description": "Beautiful tropical houseplant known for its distinctive split leaves. Easy to care for and perfect for adding natural beauty to any indoor space.",
+      "image": "https://images.unsplash.com/photo-1545289414-1951ba1daa39?w=500"
+    },
+    {
+      "name": "Stainless Steel Water Bottle",
+      "description": "Double-walled vacuum insulated water bottle that keeps drinks cold for 24 hours or hot for 12 hours. BPA-free and eco-friendly design.",
+      "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500"
+    },
+    {
+      "name": "Mechanical Gaming Keyboard",
+      "description": "RGB backlit mechanical keyboard with tactile switches, programmable keys, and anti-ghosting technology. Designed for gaming enthusiasts and professionals.",
+      "image": "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=500"
+    },
+    {
+      "name": "Aromatherapy Essential Oil Set",
+      "description": "Complete set of 6 pure essential oils including lavender, eucalyptus, peppermint, tea tree, lemon, and orange. Perfect for relaxation and wellness.",
+      "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=500"
+    },
+    {
+      "name": "Portable Phone Charger - 20000mAh",
+      "description": "High-capacity portable power bank with fast charging technology. Features multiple USB ports and LED display showing remaining battery percentage.",
+      "image": "https://images.unsplash.com/photo-1609592999893-84d7e2049589?w=500"
+    },
+    {
+      "name": "Yoga Mat - Non-Slip Premium",
+      "description": "High-quality yoga mat made from eco-friendly materials. Provides excellent grip and cushioning for all types of yoga practice and floor exercises.",
+      "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500"
+    },
+    {
+      "name": "Smart Home Security Camera",
+      "description": "WiFi-enabled security camera with 1080p HD video, night vision, motion detection, and two-way audio. Monitor your home from anywhere using the mobile app.",
+      "image": "https://images.unsplash.com/photo-1558618644-fccdb8d31de3?w=500"
+    },
+    {
+      "name": "Ceramic Non-Stick Cookware Set",
+      "description": "5-piece ceramic non-stick cookware set including frying pans and saucepans. PFOA-free, dishwasher safe, and compatible with all cooktop types.",
+      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500"
+    },
+    {
+      "name": "LED Desk Lamp with USB Charging",
+      "description": "Modern LED desk lamp with adjustable brightness, color temperature control, and built-in USB charging port. Energy-efficient and eye-friendly lighting.",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500"
+    },
+    {
+      "name": "Bamboo Cutting Board Set",
+      "description": "Set of 3 bamboo cutting boards in different sizes. Antimicrobial, sustainable, and gentle on knife blades. Includes convenient storage rack.",
+      "image": "https://images.unsplash.com/photo-1594736797933-d0bbcf6570de?w=500"
+    },
+    {
+      "name": "Wireless Charging Pad",
+      "description": "Fast wireless charging pad compatible with all Qi-enabled devices. Features LED indicator and non-slip surface. Includes wall adapter and cable.",
+      "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500"
+    }
+  ]
+}

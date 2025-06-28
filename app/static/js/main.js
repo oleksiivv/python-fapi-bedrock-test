@@ -68,7 +68,7 @@ async function analyzeImage() {
             formData.append('prompt', prompt);
         }
 
-        const response = await fetch('/api/analyze', {
+        const response = await fetch('/api/bedrock-demo/analyze', {
             method: 'POST',
             body: formData
         });

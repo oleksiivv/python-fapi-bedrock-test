@@ -26,7 +26,7 @@ class BedrockService:
 
     @property
     def bedrock_client(self):
-        """Lazy initialization of Bedrock client (for listing models)"""
+        """Lazy initialization of Bedrock client (for listing dto)"""
         if self._bedrock_client is None:
             self._bedrock_client = self._initialize_client('bedrock')
         return self._bedrock_client
@@ -165,7 +165,7 @@ class BedrockService:
             try:
                 response = self.bedrock_client.list_foundation_models()
                 model_count = len(response.get('modelSummaries', []))
-                print(f"✅ Found {model_count} available models in region {settings.AWS_REGION}")
+                print(f"✅ Found {model_count} available dto in region {settings.AWS_REGION}")
             except ClientError as e:
                 error_code = e.response['Error']['Code']
                 error_message = e.response['Error']['Message']
@@ -186,7 +186,7 @@ class BedrockService:
                     print(f"✅ Model {settings.BEDROCK_MODEL_ID} is available")
                 else:
                     print(f"❌ Model {settings.BEDROCK_MODEL_ID} not found")
-                    print(f"📋 Available models in {settings.AWS_REGION}:")
+                    print(f"📋 Available dto in {settings.AWS_REGION}:")
                     for model_id in available_models[:10]:  # Show first 10
                         print(f"   - {model_id}")
                     if len(available_models) > 10:
@@ -280,7 +280,7 @@ class BedrockService:
         if error_code == 'AccessDenied':
             print("   1. Request access to the model in AWS Bedrock console")
             print("   2. Go to AWS Console > Bedrock > Model access")
-            print("   3. Some models require explicit access approval")
+            print("   3. Some dto require explicit access approval")
         elif error_code == 'ValidationException':
             print("   1. Check model ID format")
             print("   2. Verify request payload structure")

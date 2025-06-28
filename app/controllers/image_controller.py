@@ -2,11 +2,11 @@ import os
 from typing import Optional
 from fastapi import HTTPException, UploadFile
 
-from app.models.schema import ImageAnalysisResponse
+from app.dto.schema import ImageAnalysisResponse
 from app.services.bedrock import bedrock_service
 from app.config.settings import settings
 
-
+#TODO: remove - simple bedrock usage example
 class ImageController:
     """Controller for handling image analysis business logic"""
 
